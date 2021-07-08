@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.menu {
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+.menu a {
+    text-decoration: none;
+}
+.menu li {
+    color: white;
+    cursor: pointer;
+}
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+.front {
+    width: 100%;
+    min-height: 45em;
+    margin: auto;
+    background-image: url('front1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* top bar */
+.info {
+    height: 2.8em;
+    color: white;
+    background-color: #2f5564;
+    padding: 0.3em 2em;
+    display: flex;
+    letter-spacing: 0.8px;
+    justify-content: flex-end;
+}
+.info p{
+    font-size: 1.3em;
+}
+
+
+/* menu */
+.menu ul:before, .menu ul:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid white;
+  margin: auto;
+}
+.menu ul:before {
+  margin-right: 10px;
+}
+.menu ul:after {
+  margin-left: 10px;
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 2% auto;
+    font-size: 1.2em;
+    padding: 0;
+}
+.menu li {
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+
+/* text inside the photo*/
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: block;
+}
+.text h1{
+    font-size: 3em;
+}
+.text h3{
+    font-size: 2em;
+}
+.text img {
+    margin: auto;
+    margin-bottom: 3vw;
+    width: 25%;
+    opacity: 0.8;
+}
+.text button {
+    font-size: 1.7em;
+    padding: 9px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 2%;
+    margin-top:6%;
+    width: 12em;
+}
+.btn {
+    display: flex;
+}
+.text button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(56, 55, 55);
+}
+
+/* columns */
+.general,
+.cosmetic,
+.restorative {
+    color: black;
+    text-align: center;
+    padding: 2%;
+    margin-top: -3%;
+    width: 31.4%;
+    border: solid 40px rgb(226, 226, 218);
+    box-shadow:
+    0 0 0 10px hsl(0, 7%, 75%),
+    0 0 0 15px hsl(0, 4%, 51%);
+    background-color: #fff;
+}
+.general p,
+.cosmetic p,
+.restorative p {
+    margin-top: 6%;
+}
+.general {
+    border-radius: 50%/70px 25px 200px 150px ;
+}
+.cosmetic {
+    border-radius: 50%/25px 25px 200px 150px ;
+}
+.restorative {
+    border-radius: 50%/25px 70px 200px 150px ;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* Restored teeth */
+.restore {
+    margin: 7% 0;
+}
+.restore h2{
+    text-align: center;
+    color: #2f5564;
+    font-size: 1.7em;
+}
+.gallery img{
+    width: 17%;
+    margin:3% 3% 0 3% ;
+    box-shadow: 25px 30px 20px 15px #888888;
+    border-radius: 20px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+/* Virtual appointment */
+.virtual {
+    width: 100%;
+    height: auto; 
+    border: solid 1px transparent;
+    border-radius: 40%/70px 70px 0 0;
+    background-color:#2f5564;
+    color: white;
+    padding: 2% 20% 7% 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -4vw;
+  }
+  .virtual h2{
+      text-align: center;
+      margin: 6% 0;
+  }
+.virtual button{
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+/*form + salon photo */
+.salon {
+    min-height: 35vw;
+    margin-top: -5vw;
+    margin-bottom: 0;
+    background-image: url("salon.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%/70px 70px 0 0;
+}
+.form h2{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2.3em;
+    margin-bottom: -10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 40%;
+    margin: 1%;
+    padding: 8px;
+    opacity: 0.7;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+input::placeholder {
+    color: black;
+    font-weight: 600;
+}
+textarea {
+    width: 40%;
+    opacity: 0.7;
+    padding:0.6%;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+}
+.submit {
+    width: 15%;
+    opacity: 1;
+    margin: 5%;
+    padding: 7px 14px;
+}
+textarea::placeholder {
+    color: black;
+    font-weight: 600;
+}
+input:nth-child(1) {
+margin-top: 6vw;
+}
+/*footer */
+footer {
+    background-color: #2f5564;
+    height: 250px;
+    color: white;
+    padding:2% 5%;
+    display: flex;
+    flex-direction: column;
+    opacity:0.5;
+}
+footer p:nth-child(2){
+    margin-top: 5%;
+}
+.book{
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 2em;
+    padding: 5px 10px;
+    width: 20vw;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    /*top bar */
+    .info {
+        font-size: 0.6em;
+    }
+    /* menu */
+    .menu li {
+        display: none;
+    }
+    .menu .active {
+        display: inline;
+    }
+    
+    .text button{
+        width: 11em;
+        margin: 5% auto;
+    }
+    .btn {
+        flex-direction: column;
+    }
+    /*columns */
+    .general,
+    .cosmetic,
+    .restorative {
+    border-radius: 0;
+    border: none;
+    color: white;
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    }
+    .types {
+        flex-direction: column;
+    }
+    .general {
+        background-color: #2f5564;
+    }
+    .cosmetic {
+        background-color: #156585;
+    }
+    .restorative {
+        background-color: #43778b;
+        border-radius: 20%/0 0 70px 70px;
+    }
+
+
+
+    .gallery img{
+        width: 26%;
+        box-shadow: 10px 10px 10px 5px #888888;
+    }
+    .virtual {
+        padding: 4% 5% 7% 5%;
+        margin-top: 5%;
+    }
+    .salon {
+        border-radius: 10px;
+    }
+    input, textarea {
+        width:80%;
+    }
+    .submit {
+        width: 30%;
+    }
+    footer p{
+        font-size: 0.7em;
+    }
+    .book{
+        width: auto;
+    }
+}
